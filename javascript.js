@@ -29,3 +29,20 @@ if(name === 'cha'){
 
 // 삼항연산자
 console.log(name==='cha' ? 'yes' : 'no');
+
+// switch
+
+const a = 'KOR';
+
+switch(a){
+    case 'KOR':
+        console.log('대한민국');
+        break;
+    case 'USA':
+        console.log('미국');
+        break;
+    case 'JPA':
+        console.log('일본');
+        break;
+
+}
