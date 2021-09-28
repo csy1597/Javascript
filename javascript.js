@@ -46,3 +46,43 @@ switch(a){
         break;
 
 }
+
+// while, do while
+let i = 3;
+while ( i > 0 ){
+    console.log(`while: ${i}`)
+    break;
+    i--;
+}
+
+do{
+    console.log(`do while: ${i}`)
+    i--;
+} while ( i > 0 );
+
+// for 
+
+for(i=3; i>0; i--){
+    console.log(`for: ${i}`)
+}
+
+for (let i =0; i<10;i++){
+    for(let j =0; j<10; j++){
+        console.log(`a:${i}, b:${j}`)
+    }
+}
+
+// test
+// 1
+let z = 0;
+for(z=0 ; z <= 10 ; z++){
+    if(z%2===0){
+        console.log(`z1:${z}`);   
+    }
+}
+for(z=0 ; z <= 10 ; z++){
+    if(z>8){
+        break;
+    }
+    console.log(`z2:${z}`);    
+}
