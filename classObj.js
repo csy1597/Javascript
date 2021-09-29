@@ -25,5 +25,18 @@ class user {
         this.lastName = lastName;
         this.age = age;
     }
-    
+
+    get age(){
+        return this._age;
+    }
+    set age(value){
+        if(value<0){
+            throw Error('nononononono!!!!!')
+        }
+        this._age = value;
+    }
+
 }
+
+const user1 = new user('Steve','Job', -1);
+console.log(user1.age);
