@@ -40,3 +40,21 @@ class user {
 
 const user1 = new user('Steve','Job', -1);
 console.log(user1.age);
+
+// 상속(Inheritance)
+class Shape{
+    constructor(width, height, color){
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
+    draw(){
+        console.log(`${this.color}`);
+    }
+    getArea(){
+        return width * this.height;
+    }
+}
+class Rectangle extends Shape{}
+const rectangle = new Rectangle(20, 20, 'green');
+rectangle.draw();

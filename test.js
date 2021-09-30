@@ -16,3 +16,19 @@ for(num = 0; num<=10 ; num++){
     }
 }
 
+class Shape{
+    constructor(width, height, color){
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
+    draw(){
+        console.log(`${this.color}`);
+    }
+    getArea(){
+        return width * this.height;
+    }
+}
+class Rectangle extends Shape{}
+const rectangle = new Rectangle(20, 20, 'green');
+rectangle.draw();
