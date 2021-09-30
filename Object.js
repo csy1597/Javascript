@@ -26,3 +26,15 @@ function print2(user){
 
 const userInfo = {name: 'dom', age:40};
 print2(userInfo);
+
+// 2.computed properties
+// 키값은 무조건 Stirng 타입으로 가지고 와야한다. 
+console.log(userInfo.name);
+console.log(userInfo['name']);
+
+function printValue(obj, key){
+    console.log(obj[key]);
+}
+printValue(userInfo, 'name');
+printValue(userInfo, 'age');
+
