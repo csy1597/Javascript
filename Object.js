@@ -38,3 +38,27 @@ function printValue(obj, key){
 printValue(userInfo, 'name');
 printValue(userInfo, 'age');
 
+// 3. property value shorthand
+
+const userInfo1 = {name: 'bob', age:10};
+const userInfo2 = {name: 'steve', age:20};
+const userInfo3 = {name: 'deep', age:30};
+const userInfo4 = makeUser('chacha', 40);
+
+console.log(userInfo4);
+
+function makeUser(name, age){
+    return {name:name,
+            age:age
+    }
+}
+
+// 4. Constructor function
+const userInfo5 = new makeUser('chacha1', 33);
+console.log(userInfo5);
+function makeUser(name, age){
+    // this = {} 생략하고
+    this.name = name;
+    this.age = age;
+    // return this; 를 생략한 것이다.
+}
