@@ -86,3 +86,20 @@ for(z=0 ; z <= 10 ; z++){
     }
     console.log(`z2:${z}`);    
 }
+
+//2 
+function calculate (command, a, b){
+    switch(command){
+        case 'add':
+            return a+b;
+        case 'substreact':
+            return a-b ;
+        case 'divide':
+            return a/b;
+        case 'multiply':
+            return a*b;
+        case 'remainder':
+            return a%b;
+    }
+}
+console.log(calculate('add', 2,3));
