@@ -51,5 +51,22 @@ console.log(fruits);
 fruits.unshift();
 console.log(fruits);
 
+// shift, unshift는 pop, push 보다 느리다.
+// splice: remove an item by index position
+// fruits.splice(지울 인덱스 시작번호, 지울개수, '추가할 데이터', .....);
+
+fruits.push('strawberry', 'peach');
+
+fruits.splice(1,3);
+
+// combine teo arrays
+// concat -> 새로운 데이터 값을 추가하는것 
+const fruits2 = ['a', 'b'];
+const newFruits = fruits.concat(fruits2);
+console.log(newFruits);
+
+
+
+
 
 
