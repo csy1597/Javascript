@@ -32,6 +32,24 @@ fruits.forEach(function (fruit, indexm, array){
 // 화살표함수
 fruits.forEach( (fruit) => console.log(fruit)  );
 
+// 4. 더하기, 빼기, 복사하기
+//push: 기존 데이터 다음에 추가된다.
+fruits.push('strawberry', 'peach');
+
+console.log(fruits);
+
+// pop: 배열로 저장된 데이터 중에 맨 마지막에 있는 것을 삭제하기
+fruits.pop();
+fruits.pop();
+console.log(fruits);
+
+//unshift: add an item to the benigging
+fruits.unshift('strawberry', 'peach');
+console.log(fruits);
+
+//shift: remove an item from the benigging
+fruits.unshift();
+console.log(fruits);
 
 
 
