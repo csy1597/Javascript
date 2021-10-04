@@ -12,9 +12,12 @@ console.log("-----------------------------")
 for (let car of cars){
     console.log(car.name);
 }
+console.log("-----------------------------")
 
-// for in
-for (cosnt property in cars){
+// forEach, map, filter, reduce
 
-}
+// 1. forEach
+cars.forEach(function(car1){
+    console.log(car1);
+});
 
