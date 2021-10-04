@@ -38,5 +38,12 @@ const carSize = cars.filter(function(car){
 })
 console.log(carSize);
 
-// 4. reduce
+// 4. reduce -> 배열 안의 값을 합하는 것이다.
 
+const number = [1,2,3,4];
+const total = number.reduce(function(a, b){
+    console.log(a,b);
+    return a+b;
+})
+
+console.log(total);
