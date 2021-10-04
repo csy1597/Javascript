@@ -7,4 +7,14 @@ const cars = [
 for (let i =0; i< cars.length ; i++){
     console.log(cars[i]);
 }
+console.log("-----------------------------")
+// for of
+for (let car of cars){
+    console.log(car.name);
+}
+
+// for in
+for (cosnt property in cars){
+
+}
 
