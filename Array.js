@@ -65,6 +65,28 @@ const fruits2 = ['a', 'b'];
 const newFruits = fruits.concat(fruits2);
 console.log(newFruits);
 
+// 5. searching
+// find the index
+// console.clear(); 콘솔에 있는 데이터 삭제
+// indexOf -> 데이터의 인덱스번호를 찾아준다.
+//            데이터가 없으면 -1로 출력된다.
+console.log(fruits);
+console.log(fruits.indexOf('a'));
+
+// includes -> 데이터의 유무를 확인하는 것  
+console.log(fruits.includes('a'));
+
+// lastIndexOf
+// 만약에 같은 데이터가 있으면 인덱스번호는 맨 나중에 있는 데이터의 인덱스번호가 출력된다.
+
+const car = [
+    {name:'쏘나타', size:'중형', money:3000}
+    , {name:'K5', size:'중형', money:3000}
+    , {name:'말리부', size:'중형', money:3000}
+]
+
+
+
 
 
 
