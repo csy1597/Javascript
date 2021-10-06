@@ -60,8 +60,10 @@ const scores = [
 ];
 
 const scoreTotal = scores.reduce(function(a,b){
+    console.log(a,b.score);
     return a + b.score;
 }, 0);
 
 console.log(scoreTotal);
+
 
